@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>NOTHING Game</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="game-container">
+      <h1><span>NO</span>THING</h1>
+      <p>The game where you win by doing absolutely nothing.</p>
+      <div id="timer">0</div>
+      <div id="message">Start doing nothing!</div>
+      <button id="start-button">Start Doing Nothing</button>
+      <ul id="your-best"></ul>
+    </div>
+
+    <br />
+
+    <div class="game-explanations">
+      <h1>Explanations</h1>
+      <div class="points">
+        <ul>
+          <li>
+            <b>User Inactivity Detection:</b> Event listeners for
+            <span id="high-light">mousemove and keydown</span> are added.
+          </li>
+          <li>
+            <b>Clearer Start/Stop Logic:</b> The startDoingNothing function is
+            now more robust, handling both
+            <span id="high-light">starting and stopping</span> the game.
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <script src="logic.js"></script>
+  </body>
+</html>

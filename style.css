@@ -1,0 +1,81 @@
+/* style.css */
+body {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    font-family: sans-serif;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #EEEEEE; /* Light gray background */
+    margin: 0; /* Remove default margins */
+}
+
+/* ********** game.html ********** */
+
+.game-explanations{
+    margin-top: 3vh;
+}
+
+h1{
+    text-align: center;
+    color: #1D1616;
+    
+    & span{
+      background-color: #1D1616;
+      color: #F29F58;
+      border-radius: 7px;
+    }
+}
+
+ul li {
+    margin-top: 10px;
+    /* margin-bottom: 40px; */
+    padding: 7px;
+    list-style: none;
+    background-color: #1D1616;
+    color: #EEEEEE;
+    border-radius: 7px;
+    text-align: left;
+    margin-right: 7vw;
+
+    & span{
+        color: #F29F58;
+        font-weight: 600;
+    }
+}
+
+
+#game-container {
+    margin-top: 7vh;
+    text-align: center;
+    padding: 40px;
+    background-color: #F29F58;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  }
+  
+  #timer {
+    font-size: 2em;
+    margin-bottom: 10px;
+  }
+  
+  #message {
+    margin-bottom: 20px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #EEEEEE; /* Green */
+    color: #1D1616;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Smooth transition on hover */
+  }
+  
+  button:hover {
+    background-color: #1D1616; /* Darker green on hover */
+    color: #EEEEEE;
+  }
