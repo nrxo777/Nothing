@@ -38,6 +38,7 @@ start_button.addEventListener('click', function(e){
 
 document.addEventListener('mouseover', stop_doing);
 document.addEventListener('keypress', stop_doing);
+document.addEventListener('wheel', stop_doing);
 
 function stop_doing(e) {
     if(!play || !start_timing) return;
@@ -54,6 +55,9 @@ function stop_doing(e) {
     } else if(e.type === 'keypress'){
         message.innerText = `C'mon, you pressed god damn key duuudddee`
         your_best.appendChild(li).innerHTML = `You pressed key at ${result}`;
+    } else if(e.type === 'wheel'){
+        message.innerText = `Bludd, you scrolled mouse wheel :(`
+        your_best.appendChild(li).innerHTML = `You scrolled mouse wheel at ${result}`;
     }
     
     start_button.innerText = "Start Doing Nothing AGAINNN";
